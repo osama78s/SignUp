@@ -11,7 +11,7 @@ const App = () => {
   return (
     <div className='container py-5 h-screen flex items-center justify-center'>
       <div className='max-w-[500px] w-[450px]'>
-        <Router basename='/SignUp/'>
+        <Router basename='/SignUp'>
           <AuthProvider>
             <Routes>
               <Route path='/' element={<RequireAuth>
