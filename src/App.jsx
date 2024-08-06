@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import Dashboard from './Components/Dashboard/Dashboard';
 import Login from './Components/Login/Login';
 import SignUp from './Components/SignUp/SignUp';
@@ -11,7 +11,7 @@ const App = () => {
   return (
     <div className='container py-5 h-screen flex items-center justify-center'>
       <div className='max-w-[500px] w-[450px]'>
-        <Router basename='/SignUp'>
+        <Router>
           <AuthProvider>
             <Routes>
               <Route path='/' element={<RequireAuth>
