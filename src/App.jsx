@@ -17,8 +17,8 @@ const App = () => {
               <Route path='/' element={<RequireAuth>
                 <Dashboard />
               </RequireAuth>} />
-              <Route path='/login' element={<Login />} />
               <Route path='/signup' element={<SignUp />} />
+              <Route path='/login' element={<Login />} />
               <Route path='/forgot-password' element={<ForgotPassword />} />
             </Routes>
           </AuthProvider>
